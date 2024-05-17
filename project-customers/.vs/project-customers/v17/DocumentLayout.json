@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GITHUB\\project-customers\\project-customers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\models\\clientesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\models\\clientesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\home\\cliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\home\\cliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\services\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\services\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\enums\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\enums\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\enums\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\enums\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "project-customers\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "project-customers\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-16T23:09:29.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "project-customers\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "project-customers\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:30:58.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cliente.cshtml",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Home\\Cliente.cshtml",
+              "RelativeDocumentMoniker": "project-customers\\Views\\Home\\Cliente.cshtml",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Home\\Cliente.cshtml",
+              "RelativeToolTip": "project-customers\\Views\\Home\\Cliente.cshtml",
+              "ViewState": "AQIAAGgAAAAAAAAAAADwv3QAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T11:21:59.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "project-customers\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "project-customers\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:24:58.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "project-customers\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "project-customers\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T11:23:25.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "project-customers\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "project-customers\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T21:50:38.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResponseModel.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Models\\ResponseModel.cs",
+              "RelativeDocumentMoniker": "project-customers\\Models\\ResponseModel.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Models\\ResponseModel.cs",
+              "RelativeToolTip": "project-customers\\Models\\ResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:47:23.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Services\\IClienteService.cs",
+              "RelativeDocumentMoniker": "project-customers\\Services\\IClienteService.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Services\\IClienteService.cs",
+              "RelativeToolTip": "project-customers\\Services\\IClienteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:45:15.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientesModel.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Models\\ClientesModel.cs",
+              "RelativeDocumentMoniker": "project-customers\\Models\\ClientesModel.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Models\\ClientesModel.cs",
+              "RelativeToolTip": "project-customers\\Models\\ClientesModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowBQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:08:37.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Program.cs",
+              "RelativeDocumentMoniker": "project-customers\\Program.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Program.cs",
+              "RelativeToolTip": "project-customers\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:34:19.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "project-customers\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "project-customers\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:42:32.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Genero.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Enums\\Genero.cs",
+              "RelativeDocumentMoniker": "project-customers\\Enums\\Genero.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Enums\\Genero.cs",
+              "RelativeToolTip": "project-customers\\Enums\\Genero.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:31:18.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Enums\\Pessoa.cs",
+              "RelativeDocumentMoniker": "project-customers\\Enums\\Pessoa.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Enums\\Pessoa.cs",
+              "RelativeToolTip": "project-customers\\Enums\\Pessoa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:21:29.801Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
