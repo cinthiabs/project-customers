@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using project_customers.Models;
+using project_customers.Services;
 using System.Diagnostics;
 
 namespace project_customers.Controllers
@@ -8,21 +9,48 @@ namespace project_customers.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IClienteService _service;
+        public HomeController(ILogger<HomeController> logger, IClienteService service)
         {
             _logger = logger;
+            _service = service;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string? nome_razao_social, string? email, string? telefone, DateTime? data_cadastro, bool? cliente_bloqueado)
         {
-            return View();
+            if (data_cadastro == null)
+            {
+                data_cadastro = DateTime.MinValue;
+            }
+
+            if (string.IsNullOrEmpty(nome_razao_social) &&
+                 string.IsNullOrEmpty(email) &&
+                 string.IsNullOrEmpty(telefone) &&
+                 cliente_bloqueado == null)
+            {
+                return View(await _service.GetClientes());
+            }
+            else
+            {
+                return await ClienteByFilter(nome_razao_social, email, telefone, data_cadastro, cliente_bloqueado);
+            }
         }
 
-
-        public IActionResult Cliente()
+        [HttpPost]
+        public async Task<IActionResult> ClienteByFilter(string? nome_razao_social, string? email, string? telefone, DateTime? data_cadastro, bool? cliente_bloqueado)
         {
-            return View();
+            var clienteModel = new ClientesModel
+            {
+                RazaoSocial = nome_razao_social,
+                Email = email,
+                Telefone = telefone,
+                DataCadastro = data_cadastro,
+                StatusCliente = cliente_bloqueado
+            };
+
+            return View(await _service.ClienteByFilter(clienteModel));
         }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

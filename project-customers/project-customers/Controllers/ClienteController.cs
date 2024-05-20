@@ -1,18 +1,61 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using project_customers.Models;
+using project_customers.Services;
 
 namespace project_customers.Controllers
 {
     public class ClienteController : Controller
     {
-        private readonly ILogger<ClienteController> _logger;
+        private readonly ILogger<HomeController> _logger;
 
-        public ClienteController(ILogger<ClienteController> logger)
+        private readonly IClienteService _service;
+        public ClienteController(ILogger<HomeController> logger, IClienteService service)
         {
             _logger = logger;
+            _service = service;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index(ClientesModel? cliente)
         {
-            return View();
+            if (cliente != null && cliente.CpfCnpj != null)
+            {
+                var result = await _service.CreateCliente(cliente);
+                if (result.Sucesso == false)
+                {
+                    return Json(result.Mensagem);
+                }
+                else
+                {
+                    return Redirect("Home");
+                }
+
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public async Task<IActionResult> CreateCliente(ClientesModel? cliente)
+        {
+            if (cliente != null)
+            {
+              var result =  await _service.CreateCliente(cliente);
+                if(result.Sucesso == false)
+                {
+                    return Json(result.Mensagem);
+                }
+                else
+                {
+                    return Redirect("Home");
+                }
+
+            }
+            else
+            {
+                return View();
+            }
+
         }
     }
 }

@@ -14,7 +14,7 @@
             <p>Consulte os seus Clientes cadastrados na sua Loja ou realize o cadastro de novos Clientes.</p>
         </div>
         <div class="col-md-4 text-right">
-            <button class="btn btn-primary" onclick="window.location.href = '/Home/Cliente';">Adicionar Cliente</button>
+            <button class="btn btn-primary" onclick="window.location.href = '/Cliente';">Adicionar Cliente</button>
         </div>
     </div>
 
@@ -24,51 +24,46 @@
             <div class="modal-content-style">
                 <div class="modal-header">
                     <h5 class="modal-title" id="filtroModalLabel">Filtros</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <button type="button" class="close" aria-label="Close" id="fecharModal" onclick="fechaModal()">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                     <div class="modal-body">
-                        <form id="filterForm" method="post" asp-action="ImportaExcel" asp-controller="Home" enctype="multipart/form-data" class="text-center d-flex flex-column mt-3" style="display: none;">
+                <form id="filterForm"  class="text-center d-flex flex-column mt-3">
                             <div class="input-container row">
-                                <!-- Nome/Razão Social -->
                                 <div class="form-group col-md-4">
                                     <label for="nome_razao_social">Nome/Razão Social:</label>
                                     <input type="text" class="form-control" id="nome_razao_social" name="nome_razao_social" placeholder="Nome ou Razão Social do Cliente" />
                                 </div>
 
-                                <!-- E-mail -->
                                 <div class="form-group col-md-4">
                                     <label for="email">E-mail:</label>
                                     <input type="text" class="form-control" id="email" name="email" placeholder="E-mail do Cliente" />
                                 </div>
 
-                                <!-- Telefone -->
                                 <div class="form-group col-md-4">
                                     <label for="telefone">Telefone:</label>
                                     <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone do Cliente" />
                                 </div>
 
-                                <!-- Data de Cadastro -->
                                 <div class="form-group col-md-4">
                                     <label for="data_cadastro">Data de Cadastro:</label>
                                     <input type="date" class="form-control" id="data_cadastro" name="data_cadastro" placeholder="Selecione uma data ou período" />
                                 </div>
 
-                                <!-- Cliente Bloqueado -->
                                 <div class="form-group col-md-4">
                                     <label for="cliente_bloqueado">Cliente Bloqueado:</label>
                                     <select class="form-control" id="cliente_bloqueado" name="cliente_bloqueado">
                                         <option value="">Selecione</option>
-                                        <option value="0">SIM</option>
-                                        <option value="1">NÃO</option>
+                                        <option value="true">SIM</option>
+                                        <option value="false">NÃO</option>
                                     </select>
                                 </div>
 
                                 <div class="row mt-3">
                                     <div class="button-container">
-                                        <button class="btn btn-primary">Aplicar Filtros</button>
-                                        <button class="btn btn-secondary">Limpar Filtros</button>
+                                        <button onclick="filtrar()"  class="btn btn-primary">Aplicar Filtros</button>
+                                        <button onclick="limparFiltros()"  class="btn btn-secondary">Limpar Filtros</button>
                                     </div>
                                 </div>
                         </form>
@@ -85,7 +80,7 @@
                 <th>E-mail</th>
                 <th>Telefone</th>
                 <th>Data Cadastro</th>
-                <th>Situação Cliente</th>
+                <th>Bloqueado</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -99,7 +94,8 @@
                         <td>@cliente.Email</td>
                         <td>@cliente.Telefone</td>
                         <td>@cliente.DataCadastro</td>
-                        <td>@cliente.StatusCliente</td>
+                        <td>@(cliente.StatusCliente == true ? "Sim" : cliente.StatusCliente == false ? "Não" : "")</td>
+
                       
                         <td><button class="btn btn-danger" id="actions" >Editar</button></td>
                     </tr>
@@ -108,7 +104,7 @@
             else
             {
                 <tr>
-                    <td colspan="6" class="text-center">Sem clientes cadastrados!</td>
+                    <td colspan="6" class="text-center">Nenhum cliente encontrado!</td>
                 </tr>
             }
 
@@ -117,40 +113,61 @@
 </div>
 
 <script>
-    /*
-        function ExcluirProduto(id) {
-        if (confirm('Tem certeza que deseja excluir este produto?')) {
-            $.ajax({
-                type: "POST",
-                url: '@Url.Action("ExcluirProduto", "Home")',
-                data: { id: id },
-                success: function () {
-                    window.location.reload();
-                },
-                error: function () {
-                    alert('Ocorreu um erro ao tentar excluir o produto.');
-                }
-            });
-        }
-    }
-   function ExcluirTodos() {
-        if (confirm('Tem certeza que deseja excluir todos os produtos?')) {
-            $.ajax({
-                type: "POST",
-                url: '@Url.Action("ExcluirTodos", "Home")',
-                success: function () {
-                    reloadPage();
-                },
-                error: function () {
-                    reloadPage();
-                }
-
-            });
-        }
+    function limparFiltros() {
+        document.getElementById("nome_razao_social").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("telefone").value = "";
+        document.getElementById("data_cadastro").value = "";
+        document.getElementById("cliente_bloqueado").selectedIndex = "";
     }
 
-    function reloadPage() {
-        location.reload(true);
-    }*/
+    function fechaModal() {
+        $('#filtroModal').modal('hide');
+    }
+    function filtrar() {
+        $('#filterForm').submit(function (event) {
+            event.preventDefault();
+
+            var clienteBloqueado = $('#cliente_bloqueado').val();
+
+            var formData = $(this).serialize();
+            formData += '&cliente_bloqueado=' + clienteBloqueado;
+            console.log(formData);
+
+            $.ajax({
+                url: '@Url.Action("ClienteByFilter", "Home")',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    $('#toggleTable tbody').empty();
+
+                    $.each(response, function (index, cliente) {
+                        $('#toggleTable tbody').append(
+                            '<tr>' +
+                            '<td>' + cliente.RazaoSocial + '</td>' +
+                            '<td>' + cliente.Email + '</td>' +
+                            '<td>' + cliente.Telefone + '</td>' +
+                            '<td>' + cliente.DataCadastro + '</td>' +
+                            '<td>' + (cliente.StatusCliente ? "Sim" : "Não") + '</td>' +
+                            '<td><button class="btn btn-danger" id="actions">Editar</button></td>' +
+                            '</tr>'
+                        );
+                    });
+
+                    $('#filtroModal').modal('hide');
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    }
+   
+   document.getElementById('fecharModal').addEventListener('click', function () {
+      document.getElementById('filtroModal').hidden = true;
+        
+   }
+    
+  
 
 </script>
