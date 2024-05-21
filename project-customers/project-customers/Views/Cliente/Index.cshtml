@@ -8,26 +8,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
 
+<style>
+    #pessoaFisicaFields {
+        display: none;
+    }
 
+    #tipoPessoaFisica:checked ~ #pessoaFisicaFields {
+        display: block;
+    }
+</style>
 <div class="container">
     <h2>Adicionar Cliente</h2>
 
-    <form id="Form" method="post" asp-action="Index" asp-controller="Cliente" >
+    <form id="filterForm">
 
         <div class="form-group">
             <label for="nome">Nome do Cliente/Razão Social:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite o nome ou razão social" required
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome ou razão social" required
                    data-toggle="Nome completo ou Razão Social do Cliente">
         </div>
         <div class="form-group">
             <label for="email">E-Mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite o e-mail" required
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail" required
                    data-toggle="tooltip" title="E-mail do Cliente">
         </div>
         <div class="form-group">
             <label for="telefone">Telefone:</label>
-            <input type="tel" class="form-control" id="telefone" placeholder="Digite o telefone" required
-                   data-toggle="tooltip" title="Telefone do Cliente">
+            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite o telefone" required
+                   data-toggle="tooltip" title="Telefone do Cliente" data-inputmask="'mask': '(99) 9999-9999'" maxlength="10">
         </div>
         <div class="form-group">
             <label>Data de Cadastro:</label>
@@ -36,8 +44,7 @@
 
         <div class="form-group">
             <label for="tipoPessoa">Tipo de Pessoa:</label>
-            <select class="form-control" id="tipoPessoa" data-toggle="tooltip" title="Selecione o tipo de Pessoa" 
-                onchange="mostrarCamposPessoaFisica(this.value)" required>
+            <select class="form-control" id="tipoPessoa" name="tipoPessoa"  data-toggle="tooltip" title="Selecione o tipo de Pessoa" required>
                 <option value="">Selecione...</option>
                 <option value="Física">Física</option>
                 <option value="Jurídica">Jurídica</option>
@@ -46,7 +53,7 @@
         <div id="pessoaFisicaFields" style="display: none;" >
             <div class="form-group">
                 <label for="genero">Gênero:</label>
-                <select class="form-control" id="genero" data-toggle="tooltip" title="Selecione o gênero do Cliente">
+                <select class="form-control" id="genero" name="genero" data-toggle="tooltip" title="Selecione o gênero do Cliente">
                     <option value="">Selecione...</option>
                     <option value="Feminino">Feminino</option>
                     <option value="Masculino">Masculino</option>
@@ -56,144 +63,144 @@
             </div>
             <div class="form-group">
                 <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="date" class="form-control" id="dataNascimento">
+                <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
             </div>
         </div>
         <div class="form-group">
             <label for="cpfCnpj">CPF/CNPJ:</label>
-            <input type="text" class="form-control" id="cpfCnpj" placeholder="Digite o CPF ou CNPJ" required
-                   data-toggle="tooltip" title="Insira o CPF ou o CNPJ do Cliente">
+            <input type="text" class="form-control" id="cpfCnpj"  name="cpfCnpj" placeholder="Digite o CPF ou CNPJ" required
+                   data-toggle="tooltip" title="Insira o CPF ou o CNPJ do Cliente" maxlength="15">
         </div>
         <div class="form-group">
             <label for="inscricaoEstadual">Inscrição Estadual:</label>
-            <input type="text" class="form-control" id="inscricaoEstadual" placeholder="Digite a Inscrição Estadual"
-                   data-toggle="tooltip" title="Inscrição Estadual do Cliente, selecionar Isento caso assim for.">
+            <input type="text" class="form-control" id="inscricaoEstadual" name="inscricaoEstadual" placeholder="Digite a Inscrição Estadual"
+                   data-toggle="tooltip" title="Inscrição Estadual do Cliente, selecionar Isento caso assim for." maxlength="10">
 
         </div>
         <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="isento" onchange="habilitarInscricaoEstadual()">
+            <input type="checkbox" class="form-check-input" id="isento" name="isento" onchange="habilitarInscricaoEstadual()">
             <label class="form-check-label icon" for="isento">Isento</label>
         </div>
 
 
         <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="bloqueado">
+            <input type="checkbox" class="form-check-input" id="bloqueado" name="bloqueado">
             <label class="form-check-label icon" for="bloqueado">Bloqueado</label>
         </div>
 
 
         <div class="form-group">
             <label for="senha">Senha:</label>
-            <input type="password" class="form-control" id="senha" placeholder="Digite a senha" required>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" required>
         </div>
         <div class="form-group">
             <label for="confirmacaoSenha">Confirmação de Senha:</label>
-            <input type="password" class="form-control" id="confirmacaoSenha" placeholder="Confirme a senha" required>
+            <input type="password" class="form-control" id="confirmacaoSenha" name="confirmacaoSenha" placeholder="Confirme a senha" required>
             <div id="senhaHelp" class="invalid-feedback">As senhas não conferem</div>
         </div>
 
 
-        <div class="row mt-3">
+        <div>
             <div class="button-container">
-                <button type="button" class="btn btn-primary" onclick="validarCampos()">Adicionar Cliente</button>
-                <button type="button" class="btn btn-secondary" onclick="voltar()">Voltar</button>
+                <button onclick="filtrar()" class="btn btn-primary" id="btnAdicionarCliente">Adicionar Cliente</button>
             </div>
         </div>
     </form>
 </div>
+</hr>
+<div>
+    <a asp-action="Home/Index" class="btn btn-secondary voltar">Voltar</a>
+</div>
 
 <script>
     $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-
-
-    function mostrarCamposPessoaFisica(tipoPessoa) {
-        var pessoaFisicaFields = document.getElementById("pessoaFisicaFields");
-        if (tipoPessoa === "Física") {
-            pessoaFisicaFields.style.display = "block";
-        } else {
-            pessoaFisicaFields.style.display = "none";
-        }
-    }
-
-    function habilitarInscricaoEstadual() {
-        var inscricaoEstadualInput = document.getElementById("inscricaoEstadual");
-        var isentoCheckbox = document.getElementById("isento");
-        if (isentoCheckbox.checked) {
-            inscricaoEstadualInput.disabled = true;
-        } else {
-            inscricaoEstadualInput.disabled = false;
-        }
-    }
-
-    function validarCampos() {
-        var nome = document.getElementById("nome").value;
-        var email = document.getElementById("email").value;
-        var telefone = document.getElementById("telefone").value;
-        var tipoPessoa = document.getElementById("tipoPessoa").value;
-        var cpfCnpj = document.getElementById("cpfCnpj").value;
-        var senha = document.getElementById("senha").value;
-        var confirmacaoSenha = document.getElementById("confirmacaoSenha").value;
-
-        if (nome.trim() === "" || email.trim() === "" || telefone.trim() === "" || tipoPessoa.trim() === "" || cpfCnpj.trim() === "" || senha.trim() === "" || confirmacaoSenha.trim() === "") {
-            alert("Por favor, preencha todos os campos obrigatórios.");
-            return false;
-        }
-        if (senha !== confirmacaoSenha) {
-            document.getElementById("senhaHelp").style.display = "block";
-            return false;
-        }
-        enviarDados();
-    }
-
-    function enviarDados() {
-        var nome = $('#nome').val();
-        var email = $('#email').val();
-        var telefone = $('#telefone').val();
-        var tipoPessoa = $('#tipoPessoa').val();
-        var cpfCnpj = $('#cpfCnpj').val();
-        var senha = $('#senha').val();
-        var confirmacaoSenha = $('#confirmacaoSenha').val();
-        var bloqueado = $('#bloqueado').is(':checked');
-        var dataNascimento = $('#dataNascimento').val(); 
-        var genero = $('#genero').val();
-        var inscricaoEstadual = $('#inscricaoEstadual').val();
-
-
-        var clienteData = {
-            Nome: nome,
-            Email: email,
-            Telefone: telefone,
-            TipoPessoa: tipoPessoa,
-            CpfCnpj: cpfCnpj,
-            Senha: senha,
-            ConfirmacaoSenha: confirmacaoSenha,
-            Bloqueado: bloqueado,
-            DataNascimento: dataNascimento, 
-            Genero: genero,
-            InscricaoEstadual: inscricaoEstadual
-        };
-
-        $.ajax({
-            url: '@Url.Action("Index", "Cliente")',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(clienteData),
-            success: function (response) {
-                if (response.redirectUrl) 
-                {
-                    alert('Cliente adicionado com sucesso!');
-                    window.location.href = response.redirectUrl;
-                } else {
-                    alert(response);
-                }
-            }
-            error: function (xhr, status, error) {
-                console.log(error);
-                alert('Ocorreu um erro ao adicionar o cliente.');
+        $('#tipoPessoa').change(function () {
+            var tipoPessoa = $(this).val();
+            if (tipoPessoa === 'Física') {
+                $('#cpfCnpj').inputmask('999.999.999-99');
+            } else if (tipoPessoa === 'Jurídica') {
+                $('#cpfCnpj').inputmask('99.999.999/9999-99');
             }
         });
+    });
+
+    $(document).ready(function () {
+        $('#tipoPessoa').change(function () {
+            var tipoPessoa = $(this).val();
+            if (tipoPessoa === 'Física') {
+                $('#pessoaFisicaFields').show();
+            } else {
+                $('#pessoaFisicaFields').hide();
+            }
+        });
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $("#tipoPessoa").on("change", function () {
+            var tipoPessoa = $(this).val();
+            mostrarCamposPessoaFisica(tipoPessoa);
+        });
+
+        var btnAdicionarCliente = document.getElementById("btnAdicionarCliente");
+        btnAdicionarCliente.addEventListener("click", validarCampos);
+
+        function mostrarCamposPessoaFisica(tipoPessoa) {
+            if (tipoPessoa === "Física") {
+                $("#pessoaFisicaFields").show();
+            } else {
+                $("#pessoaFisicaFields").hide();
+            }
+        }
+
+        function validarCampos() {
+            var nome = $("#nome").val().trim();
+            var email = $("#email").val().trim();
+            var telefone = $("#telefone").val().trim();
+            var tipoPessoa = $("#tipoPessoa").val().trim();
+            var cpfCnpj = $("#cpfCnpj").val().trim();
+            var senha = $("#senha").val().trim();
+            var confirmacaoSenha = $("#confirmacaoSenha").val().trim();
+
+            if (nome === "" || email === "" || telefone === "" || tipoPessoa === "" || cpfCnpj === "" || senha === "" || confirmacaoSenha === "") {
+                alert("Por favor, preencha todos os campos obrigatórios.");
+                return false;
+            }
+            if (senha !== confirmacaoSenha) {
+                $("#senhaHelp").show();
+                return false;
+            }
+        }
+    });
+
+    function filtrar() {
+        validarCampos()
+        $('#filterForm').submit(function (event) {
+            event.preventDefault();
+
+            var formData = $(this).serialize();
+            console.log(formData);
+
+            $.ajax({
+                url: '@Url.Action("Index", "Cliente")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: formData,
+                success: function (response) {
+                    if (response.redirectUrl) {
+                        alert('Cliente adicionado com sucesso!');
+                        window.location.href = response.redirectUrl;
+                    } else {
+                        alert(response);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                    alert('Ocorreu um erro ao adicionar o cliente.');
+                }
+            });
+        });
     }
+    
  </script>
 

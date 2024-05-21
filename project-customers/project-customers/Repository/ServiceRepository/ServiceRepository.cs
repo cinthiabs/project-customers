@@ -100,18 +100,18 @@ namespace project_customers.Repository.ServiceRepository
 
             if (!string.IsNullOrEmpty(cliente.CpfCnpj))
             {
-                sql += " AND CpfCnpj = @CpfCnpj";
+                sql += " and CpfCnpj = @CpfCnpj";
                 parameters.Add("@CpfCnpj", cliente.CpfCnpj);
             }
 
             if (!string.IsNullOrEmpty(cliente.Email))
             {
-                sql += " AND Email = @Email";
+                sql += " or Email = @Email";
                 parameters.Add("@Email", cliente.Email);
             }
-            if (!string.IsNullOrEmpty(cliente.InscricaoEstadual.ToString()))
+            if (!string.IsNullOrEmpty(cliente.InscricaoEstadual))
             {
-                sql += " AND InscricaoEstadual = @InscricaoEstadual";
+                sql += " or InscricaoEstadual = @InscricaoEstadual";
                 parameters.Add("@InscricaoEstadual", cliente.InscricaoEstadual);
             }
 

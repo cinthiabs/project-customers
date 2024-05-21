@@ -14,7 +14,7 @@ namespace project_customers.Models
         public bool? StatusCliente { get; set; }
         public Pessoa? Pessoa { get; set; }
         public string? CpfCnpj { get; set; }
-        public int? InscricaoEstadual { get; set; }
+        public string? InscricaoEstadual { get; set; }
         public bool? Insento { get; set; }
         public Genero? Genero { get; set; }
         public DateTime? DataNascimento { get; set; }

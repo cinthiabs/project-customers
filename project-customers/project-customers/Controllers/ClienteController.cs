@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using project_customers.Enums;
 using project_customers.Models;
 using project_customers.Services;
 
@@ -15,14 +16,28 @@ namespace project_customers.Controllers
             _logger = logger;
             _service = service;
         }
-        public async Task<IActionResult> Index(ClientesModel? cliente)
+        public async Task<IActionResult> Index(string nome, string email, string telefone, Pessoa tipoPessoa, string cpfCnpj, string senha, string confirmacaoSenha, bool bloqueado, DateTime? dataNascimento, Genero genero, string inscricaoEstadual)
         {
+            var cliente = new ClientesModel
+            {
+                RazaoSocial = nome,
+                Email = email,
+                Telefone = telefone,
+                Pessoa = tipoPessoa,
+                CpfCnpj = cpfCnpj,
+                Senha = senha,
+                SenhaConfirmar = confirmacaoSenha,
+                StatusCliente = bloqueado,
+                DataNascimento = dataNascimento,
+                Genero = genero,
+                InscricaoEstadual = inscricaoEstadual
+            };
             if (cliente != null && cliente.CpfCnpj != null)
             {
                 var result = await _service.CreateCliente(cliente);
                 if (result.Sucesso == false)
                 {
-                    return Json(result.Mensagem);
+                    return Json(new { success = false, mensagem = result.Mensagem });
                 }
                 else
                 {
