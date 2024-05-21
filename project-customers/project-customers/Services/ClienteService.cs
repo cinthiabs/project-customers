@@ -21,14 +21,17 @@ namespace project_customers.Services
                 if (validate.Email == cliente.Email)
                 {
                     response.Mensagem = "Este e-mail já está cadastrado para outro Cliente.";
+                    return response;
                 }
                 if (validate.CpfCnpj == cliente.CpfCnpj)
                 {
                     response.Mensagem = "Este CPF/CNPJ já está cadastrado para outro Cliente";
+                    return response;
                 }
                 if (validate.InscricaoEstadual == cliente.InscricaoEstadual)
                 {
                     response.Mensagem = "Esta Inscrição Estadual já está cadastrada para outro Cliente";
+                    return response;
                 }
 
             }
