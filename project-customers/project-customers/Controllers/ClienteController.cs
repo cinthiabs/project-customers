@@ -35,6 +35,16 @@ namespace project_customers.Controllers
                 return View();
             }
         }
+        public async Task<IActionResult> UpdateCliente(int Id)
+        {
+            if(Id != null)
+            {
+                ViewBag.ClienteId = Id;
+                var result = await _service.GetClienteByID(Id);
+                return View(result);
+            }
+            return View();
+        }
 
         public async Task<IActionResult> CreateCliente(ClientesModel? cliente)
         {

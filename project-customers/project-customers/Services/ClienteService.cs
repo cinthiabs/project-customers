@@ -16,9 +16,21 @@ namespace project_customers.Services
             var validate = await _repository.ValidateCreateCliente(cliente);
             if(validate != null)
             {
-                response.Mensagem = "Já cadastrado";
                 response.Sucesso = false;
                 response.Dados = validate;
+                if (validate.Email == cliente.Email)
+                {
+                    response.Mensagem = "Este e-mail já está cadastrado para outro Cliente.";
+                }
+                if (validate.CpfCnpj == cliente.CpfCnpj)
+                {
+                    response.Mensagem = "Este CPF/CNPJ já está cadastrado para outro Cliente";
+                }
+                if (validate.InscricaoEstadual == cliente.InscricaoEstadual)
+                {
+                    response.Mensagem = "Esta Inscrição Estadual já está cadastrada para outro Cliente";
+                }
+
             }
             else
             {
@@ -38,21 +50,27 @@ namespace project_customers.Services
             return clientes;
         }
 
-        public Task<List<ClientesModel>> ClienteByFilter(ClientesModel cliente)
+        public async Task<List<ClientesModel>> ClienteByFilter(ClientesModel cliente)
         {
-           var clienteByFilter = _repository.GetClienteByFilter(cliente);
+           var clienteByFilter = await _repository.GetClienteByFilter(cliente);
             return clienteByFilter;
         }
-        public Task<ClientesModel> ValidateCreateCliente(ClientesModel cliente)
+        public async Task<ClientesModel> ValidateCreateCliente(ClientesModel cliente)
         {
-            var clienteByFilter = _repository.ValidateCreateCliente(cliente);
+            var clienteByFilter = await _repository.ValidateCreateCliente(cliente);
             return clienteByFilter;
         }
 
-        public Task<ClientesModel> UpdateCliente(ClientesModel cliente)
+        public async Task<ClientesModel> UpdateCliente(ClientesModel cliente)
         {
-            var clienteupdated = _repository.UpdateCliente(cliente);
+            var clienteupdated = await _repository.UpdateCliente(cliente);
             return clienteupdated;
+        }
+
+        public async Task<ClientesModel> GetClienteByID(int clienteid)
+        {
+            var cliente = await _repository.GetClienteByID(clienteid);
+            return cliente;
         }
     }
 }

@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\GITHUB\\project-customers\\project-customers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\cliente\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\cliente\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\repository\\servicerepository\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\repository\\servicerepository\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\enums\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\enums\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\services\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\services\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\repository\\servicerepository\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\enums\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|solutionrelative:project-customers\\enums\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A27FED1-A993-4A18-B959-91EBD0D29249}|project-customers\\project-customers.csproj|c:\\github\\project-customers\\project-customers\\project-customers\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -58,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,72 +78,111 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Services\\IClienteService.cs",
+              "RelativeDocumentMoniker": "project-customers\\Services\\IClienteService.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Services\\IClienteService.cs",
+              "RelativeToolTip": "project-customers\\Services\\IClienteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T00:37:58.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IServiceRepository.cs",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Repository\\ServiceRepository\\IServiceRepository.cs",
+              "RelativeDocumentMoniker": "project-customers\\Repository\\ServiceRepository\\IServiceRepository.cs",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Repository\\ServiceRepository\\IServiceRepository.cs",
+              "RelativeToolTip": "project-customers\\Repository\\ServiceRepository\\IServiceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T00:35:14.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Cliente\\Update.cshtml",
+              "RelativeDocumentMoniker": "project-customers\\Views\\Cliente\\Update.cshtml",
+              "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Cliente\\Update.cshtml",
+              "RelativeToolTip": "project-customers\\Views\\Cliente\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T00:21:45.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "site.js",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "project-customers\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\wwwroot\\js\\site.js",
               "RelativeToolTip": "project-customers\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAADIAAAAAAAAAAAAUwEoAAAABAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAiwEoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-20T23:40:54.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "project-customers\\Views\\Cliente\\Index.cshtml",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Cliente\\Index.cshtml",
               "RelativeToolTip": "project-customers\\Views\\Cliente\\Index.cshtml",
-              "ViewState": "AQIAALoAAAAAgGufOqvGv00AAAAAAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAhwLoAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-20T22:29:32.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "project-customers\\Controllers\\ClienteController.cs",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "project-customers\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAqwBwAAAAsAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCUAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T21:53:37.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "project-customers\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "project-customers\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAwGQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-20T19:47:30.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Repository\\ServiceRepository\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "project-customers\\Repository\\ServiceRepository\\ServiceRepository.cs",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Repository\\ServiceRepository\\ServiceRepository.cs",
               "RelativeToolTip": "project-customers\\Repository\\ServiceRepository\\ServiceRepository.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAAAH4AAAAAAAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T18:44:46.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Program.cs",
               "RelativeDocumentMoniker": "project-customers\\Program.cs",
@@ -139,31 +190,30 @@
               "RelativeToolTip": "project-customers\\Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T11:34:19.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T11:34:19.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Services\\ClienteService.cs",
               "RelativeDocumentMoniker": "project-customers\\Services\\ClienteService.cs",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Services\\ClienteService.cs",
               "RelativeToolTip": "project-customers\\Services\\ClienteService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBYAAAAQAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAuwEYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T13:10:01.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "project-customers\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Controllers\\HomeController.cs",
               "RelativeToolTip": "project-customers\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAqwCgAAAAIAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T11:30:58.461Z",
               "EditorCaption": ""
@@ -183,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Genero.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Enums\\Genero.cs",
               "RelativeDocumentMoniker": "project-customers\\Enums\\Genero.cs",
@@ -196,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Pessoa.cs",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\Enums\\Pessoa.cs",
               "RelativeDocumentMoniker": "project-customers\\Enums\\Pessoa.cs",
@@ -204,12 +254,11 @@
               "RelativeToolTip": "project-customers\\Enums\\Pessoa.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T21:21:29.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T21:21:29.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "site.css",
               "DocumentMoniker": "C:\\GITHUB\\project-customers\\project-customers\\project-customers\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "project-customers\\wwwroot\\css\\site.css",
@@ -217,8 +266,7 @@
               "RelativeToolTip": "project-customers\\wwwroot\\css\\site.css",
               "ViewState": "AQIAACoAAAAAAAAAAAAAADAAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-16T23:09:29.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T23:09:29.491Z"
             }
           ]
         }

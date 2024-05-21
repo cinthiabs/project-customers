@@ -96,9 +96,9 @@
                         <td>@cliente.DataCadastro</td>
                         <td>@(cliente.StatusCliente == true ? "Sim" : cliente.StatusCliente == false ? "Não" : "")</td>
 
-                      
-                        <td><button class="btn btn-danger" id="actions" >Editar</button></td>
-                    </tr>
+
+                    <td><button class="btn btn-danger" onclick="window.location.href = '/Cliente/Update?id=@cliente.Id'">Editar</button></td>
+                </tr>
                 }
             }
             else
@@ -167,7 +167,9 @@
       document.getElementById('filtroModal').hidden = true;
         
    }
-    
-  
+
+       function editarCliente(clienteId) {
+            window.location.href = "/Cliente/Update?id=" + clienteId;
+        }
 
 </script>

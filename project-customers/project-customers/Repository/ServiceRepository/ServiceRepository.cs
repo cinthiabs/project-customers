@@ -121,6 +121,15 @@ namespace project_customers.Repository.ServiceRepository
                 return clientes.FirstOrDefault();
             }
         }
-        
+
+        public async Task<ClientesModel> GetClienteByID(int clienteid)
+        {
+            using (var con = new MySqlConnection(_connectionString))
+            {
+                var sql = @"SELECT * FROM Cliente where id = @Id";
+                var returno = await con.QueryAsync<ClientesModel>(sql, clienteid);
+                return returno.FirstOrDefault();
+            }
+        }
     }
 }

@@ -5,6 +5,7 @@ namespace project_customers.Services
     public interface IClienteService
     {
         Task<List<ClientesModel>> GetClientes();
+        Task<ClientesModel> GetClienteByID(int clienteid);
         Task<ResponseModel<ClientesModel>> CreateCliente(ClientesModel cliente);
         Task<List<ClientesModel>> ClienteByFilter(ClientesModel cliente);
         Task<ClientesModel> ValidateCreateCliente(ClientesModel cliente);
